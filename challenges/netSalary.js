@@ -3,14 +3,14 @@
 // Calculates gross salary i.e Basic salary plus reliefs
 let pay
 
-let perRel 
+let perRel
 let insRel
 let pensCon
 let hospCon
-let houseRel
+let housRel
 let owOccInt
 let disEx
-let reliefs = (perRel + insRel + pensCon + hospCon + housrel + owOccInt + disEx)
+let reliefs = (perRel + insRel + pensCon + hospCon + housRel + owOccInt + disEx)
 
 let grossSalary =  pay + reliefs
 
@@ -54,6 +54,8 @@ function nhifDed(grossSalary){
         deduction = 1600
     } else if (grossSalary > 99999 ){
         deduction = 1700
+    }  else if (grossSalary <= 0 ){
+        deduction = 0
     }
     return deduction
 }
@@ -96,6 +98,8 @@ function paye23(){
             taxRate = 32.5
         } else if (taxPay > 800000){
             taxRate = 35.0
+        } else if (taxPay <= 0){
+            taxRate = 0
         }
         let tax = (taxRate/100) * pay
         return tax
@@ -103,6 +107,3 @@ function paye23(){
 }
 paye = paye23(pay)
 let netSalary = grossSalary - (deductions + paye)
-
-
-
