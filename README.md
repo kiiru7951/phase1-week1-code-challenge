@@ -1,3 +1,5 @@
+# Phase 1 Week ! Toy Problems
+## Description
 **Challenge 1: Student Grade Generator (Toy Problem)**
  studentGrade.js
 
@@ -22,3 +24,12 @@ This program calculates an individual’s Net Salary by getting the inputs of ba
   - https://www.aren.co.ke/payroll/taxrates.htm 
   - https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 
+## Set up
+1. Fork and clone this repo into your local machine
+2. Open index.js
+
+## Author
+ALLAN KARIUKI
+
+## License
+Licensed under Moringa School (Flatiron)
